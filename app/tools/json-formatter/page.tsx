@@ -381,10 +381,46 @@ Example:
 
       {/* Footer */}
       <footer className="border-t border-slate-800">
-        <div className="mx-auto max-w-6xl px-6 py-8 text-sm text-slate-500">
-          © {new Date().getFullYear()} DevToolsHub. All rights reserved.
-        </div>
-      </footer>
+  <div className="mx-auto max-w-6xl px-6 py-8">
+    <div className="flex flex-col gap-4 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+      
+      <p>
+        © {new Date().getFullYear()} DevToolsHub. All rights reserved.
+      </p>
+
+      <div className="flex gap-5">
+        <a
+          href="/about"
+          className="transition hover:text-white"
+        >
+          About
+        </a>
+
+        <a
+          href="/privacy"
+          className="transition hover:text-white"
+        >
+          Privacy Policy
+        </a>
+
+        <a
+          href="/terms"
+          className="transition hover:text-white"
+        >
+          Terms
+        </a>
+
+        <a
+          href="/contact"
+          className="transition hover:text-white"
+        >
+          Contact
+        </a>
+      </div>
+
+    </div>
+  </div>
+</footer>
     </main>
   );
 }
